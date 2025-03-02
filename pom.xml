@@ -13,6 +13,8 @@
         <module>boot </module>
         <module>test_war</module>
         <module>sundry</module>
+        <module>MySpringApp</module>
+        <module>common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
