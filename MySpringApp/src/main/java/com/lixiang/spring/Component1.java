@@ -3,6 +3,7 @@ package com.lixiang.spring;
 import com.lixiang.common.MyLog4JFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.log4j.Logger;
+import org.apache.log4j.spi.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
@@ -16,7 +17,8 @@ import org.springframework.stereotype.Component;
 public class Component1 {
     @Autowired
     private ApplicationEventPublisher context;
-    static Logger  myLogger  =MyLog4JFactory.getLogger();
+    static Logger  myLogger  = MyLog4JFactory.getLogger();
+    // static  Logger  myLogger =  Logger.getLogger(Component1.class);
 
     public void register() {
         myLogger.debug("用户注册");

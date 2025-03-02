@@ -12,7 +12,6 @@ public class MyLog4JFactory {
 
         String callerClassName = getCallerClassName();
         Logger logger = Logger.getLogger(callerClassName);
-        logger.setLevel(Level.toLevel(10000));//对应debug
         return logger;
     }
 
