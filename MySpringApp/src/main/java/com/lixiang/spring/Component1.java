@@ -22,6 +22,7 @@ public class Component1 {
 
     public void register() {
         myLogger.debug("用户注册");
+        // TODO 在这里使用事件来解耦，使用事件监听来执行注册之后的发短信之类的操作
         context.publishEvent(new UserRegisteredEvent(this));
     }
 
