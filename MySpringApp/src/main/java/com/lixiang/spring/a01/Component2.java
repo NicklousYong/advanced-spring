@@ -16,8 +16,8 @@ public class Component2 {
     @EventListener
     public void aaa(UserRegisteredEvent event){
         System.out.println("sss");
-        myLogger.info("{"+event+"}");
-        System.out.println("jsjjs");
+        myLogger.info("事件为：{"+event+"}");
+        System.out.println("发送短信");
 
 
 

@@ -54,7 +54,7 @@ public class TestBeanFactory {
             beanFactory.addBeanPostProcessor(i);
         });
         // 预先初始化单例对象（完成依赖注入和初始化流程）
-        beanFactory.preInstantiateSingletons();
+        // beanFactory.preInstantiateSingletons();
         System.out.println("---------------------------------------------");
         System.out.println(beanFactory.getBean(Bean1.class).getBean2());
         System.out.println(beanFactory.getBean(Bean1.class).getInter());
